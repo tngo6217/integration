@@ -25,5 +25,5 @@ print ("True value of x and y is:", x and y )
 print ("True value of x or y is:", x or y)
 print ("True value of not y is:", not y)
 print("Now let's figure out how the function if...else, the while loops, and for loops work")
-
+enter = int(input("Enter an integer number: "))
 
