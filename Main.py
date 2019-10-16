@@ -24,6 +24,6 @@ print ("We are going to figure out the true value of x (True) and y (False)")
 print ("True value of x and y is:", x and y )
 print ("True value of x or y is:", x or y)
 print ("True value of not y is:", not y)
-
+print("Now let's figure out how the function if...else, the while loops, and for loops work")
 
 
