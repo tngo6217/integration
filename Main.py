@@ -35,6 +35,18 @@ while price>0:
     price = float(input("Please enter the price of the item: "))
     total +=price
 print ("The total of your items is: ", format(total, '.2f'))
+print("We can use while loops for most cases, but with for loops, we have to know how many times the code is going to run.")
+# Example of for loops (Exercise Student Quiz Average Nested Loop on Hackerrank):
+# The prompt would ask user to enter 3 student's names and 3 scores of their exams, and the output is their names with their average scores
+for numStudent in range (1,4):
+    total=0
+    studentName= input ("Please enter student "+ str(numStudent) + "'s name: ")
+    for x in range(1,4):
+        score = int(input("Please enter score "+ str(x) + ": "))
+        total= total +score
+    average = total/3
+    print ("Name: "+studentName)
+    print ("Average:", format(average,'.2f'))
 print("The next program code is to accept the cost of two items to be purchased, then the payment amount.")
 print("The output is going to be a thank you message with how much change will be given if the payment amount is greater than or equal to the amount of the 2 items.")
 print("If not, it would tell the user how much is still owed.")
@@ -61,7 +73,7 @@ def getMessage(userNum,randNum):
     elif userNum<randNum:
         print("Your number is smaller than computer's number.")
 def main():
-    userNum= int(input("Enter a number betwwen 1 and 5: "))
+    userNum= int(input("Enter a number between 1 and 5: "))
     while userNum>5 or userNum<1:
         userNum= int(input("Invalid number. Please enter again: "))
     randNum=random.randint(1,5)
@@ -69,4 +81,21 @@ def main():
     print("User number:",userNum)
     getMessage(userNum,randNum)
 main()
+#This following function shows how parameters in a def function is changed to arguments when the function is called.
+
+def number(a):
+    for a in range(0, 5, 2):
+        a= str("This is an even number")
+    return a
+def b():
+    num1 = int(input("Please enter a random integer between 0 to 4: "))
+    while num1 < 0 or num1 > 4:
+        num1 = int(input("Invalid number. Please try again: "))
+    if num1 % 2 == 0:
+        print(number(num1))
+    elif num1%2 ==1:
+        print ("This is an odd number")
+b()
+
+
 
